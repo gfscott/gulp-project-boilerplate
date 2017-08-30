@@ -1,0 +1,23 @@
+{
+  "name": "gulp-boilerplate-app",
+  "version": "0.0.1",
+  "description": "Boilerplate for gulp-enabled web projects",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified. You might want to do something about that!\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "contentful"
+  ],
+  "author": "Graham F. Scott",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}
