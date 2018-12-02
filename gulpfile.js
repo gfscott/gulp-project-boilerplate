@@ -16,7 +16,9 @@ gulp.task("css", function() {
 
   gulp
     .src("./src/css/**/*.css")
+    .pipe(gulp.dest("./dist/css"))
     .pipe(postcss(postcss_plugins))
+    .pipe(rename({ extname: ".min.css" }))
     .pipe(gulp.dest("./dist/css"));
 });
 
