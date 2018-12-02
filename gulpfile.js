@@ -1,9 +1,11 @@
 var gulp = require("gulp"),
   rename = require("gulp-rename"),
+  concat = require("gulp-concat"),
   uglify = require("gulp-uglify"),
   autoprefixer = require("autoprefixer"),
   cssnano = require("cssnano"),
-  postcss = require("gulp-postcss");
+  postcss = require("gulp-postcss"),
+  sourcemaps = require("gulp-sourcemaps");
 
 gulp.task("default", ["html", "css", "js"]);
 
@@ -16,18 +18,24 @@ gulp.task("css", function() {
 
   gulp
     .src("./src/css/**/*.css")
+    .pipe(sourcemaps.init())
+    .pipe(concat("style.css"))
     .pipe(gulp.dest("./dist/css"))
     .pipe(postcss(postcss_plugins))
     .pipe(rename({ extname: ".min.css" }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest("./dist/css"));
 });
 
 gulp.task("js", function() {
   gulp
     .src("./src/js/**/*.js")
+    .pipe(sourcemaps.init())
+    .pipe(concat("main.js"))
     .pipe(gulp.dest("./dist/js"))
     .pipe(uglify())
     .pipe(rename({ extname: ".min.js" }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest("./dist/js"));
 });
 
