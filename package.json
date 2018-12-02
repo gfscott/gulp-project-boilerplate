@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Boilerplate for gulp-enabled web projects",
   "main": "gulpfile.js",
+  "repository": "https://github.com/gfscott/gulp-project-boilerplate",
   "scripts": {
     "test": "echo \"Error: no test specified. You might want to do something about that!\" && exit 1"
   },
