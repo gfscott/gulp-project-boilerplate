@@ -3,11 +3,10 @@
   "version": "0.0.1",
   "description": "Boilerplate for gulp-enabled web projects",
   "main": "gulpfile.js",
-  "repository": "https://github.com/gfscott/gulp-project-boilerplate",
+  "repository": "",
   "scripts": {
     "test": "echo \"Error: no test specified. You might want to do something about that!\" && exit 1"
   },
-  "repository": "",
   "keywords": [
     "contentful"
   ],
@@ -15,8 +14,8 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^8.6.5",
-    "cssnano": "^3.10.0",
-    "gulp": "^3.9.0",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.4.0",
